@@ -1,6 +1,5 @@
 package com.justtiffins.rest.commons.domain;
 
-import java.math.BigDecimal;
 
 /**
  * This particular item is used as purely for defining cost of the option.
@@ -27,25 +26,5 @@ public interface Item {
 	 * @return {@link String}
 	 */
 	String getDescription();
-
-	/**
-	 * Cost of the item.
-	 * @return {@link BigDecimal}
-	 */
-	BigDecimal getCostPrice();
 	
-	/**
-	 * Number of item part of the order.
-	 * @return {@link Integer}
-	 */
-	Integer getQauntity();
-	
-	/**
-	 * Type of the item.
-	 * @return {@link String}
-	 */
-	String getType();
-	
-	
-
 }
