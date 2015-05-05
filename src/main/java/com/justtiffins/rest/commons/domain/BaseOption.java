@@ -10,7 +10,7 @@ import java.util.List;
  * @author vgajula
  *
  */
-public abstract class BaseOption implements Option {
+public class BaseOption implements Option {
 	
 	private String optionNumber;
 	private String name;
@@ -18,6 +18,36 @@ public abstract class BaseOption implements Option {
 	private BigDecimal price;
 	private Integer quantity;
 	private List<Item> items;
+	
+	/**
+	 * Default Constructor.
+	 */
+	public BaseOption() {
+	}
+	
+	/**
+	 * Constructor with all fields.
+	 * @param optionNumber
+	 * @param name
+	 * @param description
+	 * @param price
+	 * @param quantity
+	 * @param items
+	 */
+	public BaseOption(String optionNumber, String name, String description,
+			BigDecimal price, Integer quantity, List<Item> items) {
+		super();
+		this.optionNumber = optionNumber;
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.quantity = quantity;
+		this.items = items;
+	}
+
+
+
+
 	/**
 	 * @return the optionNumber
 	 */
